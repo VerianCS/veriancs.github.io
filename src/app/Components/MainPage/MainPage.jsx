@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Linkedin, Mail, FileText, Beaker, Code, Award, Book, Users, ExternalLink } from 'lucide-react'
+import { Linkedin, Mail, FileText, Beaker, Code, Award, Book, Users, ExternalLink, Twitter, Github } from 'lucide-react'
 import Image from 'next/image'
 import FooterComponent from '../FooterComponent/FooterComponent'
 import BackgroundAudio from '../AudioPlayerComponent/AudioPlayerComponent'
@@ -14,6 +14,11 @@ const cloudColors = [
   'from-yellow-300 to-red-300',
 ]
 
+const SocialLinks = [
+  {icon: Linkedin, link: "https://www.linkedin.com/in/brian-av-57aba8231/"},
+  {icon: Github, link: "https://www.github.com/veriancs"},
+  {icon: Twitter, link: "https://twitter.com/ring6dev"}
+]
 const projects = [
   { title: 'AI Research Paper', type: 'science', description: 'Published in Nature on advanced machine learning algorithms.', link: '#' },
   { title: 'Web App for Data Visualization', type: 'dev', description: 'Interactive dashboard for complex scientific data.', link: '#' },
@@ -118,18 +123,24 @@ export default function MainPage() {
             NVAEIL
           </motion.h1>
           <h2 className="text-2xl text-blue-200">Developer & AI engineer</h2>
+          
           <div className="flex justify-center space-x-4 mt-4">
-            {[Users, Linkedin, Mail, FileText].map((Icon, index) => (
+            {
+            SocialLinks.map((SocialLinks, index, icon) => {
+              const Icon = SocialLinks.icon;
+            
+            return(
               <motion.a
                 key={index}
-                href="#"
+                href={SocialLinks.link}
                 className="text-white hover:text-blue-300 transition-colors duration-300"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               >
                 <Icon size={24} />
               </motion.a>
-            ))}
+            )
+          })}
           </div>
         </header>
 
