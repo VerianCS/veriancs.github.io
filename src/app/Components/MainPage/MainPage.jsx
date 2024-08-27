@@ -27,6 +27,7 @@ const projects = [
   { title: 'Open Source Library for Data Analysis', type: 'dev', description: 'Created a Python library for advanced data analysis techniques.', link: '#' },
   { title: 'Quantum Cryptography Protocol', type: 'both', description: 'Designed and implemented a new quantum cryptography protocol.', link: '#' },
   { title: 'Micro Angelic OS', type: 'science', description: 'Designed an AI powered micro Operative system for embbed and IoT technology called Angela OS', link: '#' },
+  { title: 'Personal portfolio', type: 'dev', description: 'My personal portfolio, made on NEXTJS with REACT + TAILWINDCSS, glassmorphism style', link: '#' },
 ]
 
 const skills = ['Python', 'JavaScript', 'React', 'Machine Learning', 'Data Analysis', 'Quantum Physics', 'Node.js', 'TensorFlow', 'SQL', 'Git', 'Docker', 'AWS', "NextJS", "C#", ".NET", "GO", "Unity"]
