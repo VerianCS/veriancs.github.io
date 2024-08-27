@@ -44,7 +44,7 @@ const awards = [
 ]
 
 const galleryImages = [
-  '/placeholder.svg?height=300&width=300&text=Conference+Talk',
+  '/DataInsight.png?height=300&width=300&text=Data+Insight+Screenshot',
   '/placeholder.svg?height=300&width=300&text=Lab+Work',
   '/placeholder.svg?height=300&width=300&text=Coding+Session',
   '/placeholder.svg?height=300&width=300&text=Award+Ceremony',
