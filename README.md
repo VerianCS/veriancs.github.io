@@ -1,5 +1,7 @@
 This is my personal portfolio, its a general purpose developer portfolio with a glassmorphic style made on NEXTJS with JSX 
 
+![image](https://github.com/user-attachments/assets/b0c9a351-0019-4213-9f23-cb5796b05d2d)
+
 ## Getting Started
 
 First, run the development server:
