@@ -148,7 +148,7 @@ export default function MainPage() {
         <section className="mb-12">
           <h3 className="text-2xl font-semibold text-white mb-4">About Me</h3>
           <p className="text-blue-100">
-            I'm a passionate developer and AI, bridging the gap between cutting-edge science and innovative software solutions. With a Bsc in Computer Sciences and years of development experience, I bring a unique perspective to both research and practical applications. My work focuses on leveraging quantum principles to enhance machine learning algorithms and developing cutting edge software solutions.
+            I'm a passionate developer and AI engineer, bridging the gap between cutting-edge science and innovative software solutions. With a Bsc in Computer Sciences and years of development experience, I bring a unique perspective to both research and practical applications. My work focuses on leveraging quantum principles to enhance machine learning algorithms and developing cutting edge software solutions.
           </p>
         </section>
 
