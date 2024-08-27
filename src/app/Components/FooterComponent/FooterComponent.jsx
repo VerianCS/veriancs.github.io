@@ -14,32 +14,28 @@ export default function FooterComponent() {
                 <span className="text-sm text-muted-foreground">github.com/veriancs</span>
               </li>
               <li className="flex items-center justify-center space-x-2">
-                <Phone className="w-5 h-5 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">+12 (555)  41 24214 </span>
+                <Linkedin className="w-5 h-5 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">BRIAN A.V</span>
               </li>
               <li className="flex items-center justify-center space-x-2">
                 <MapPin className="w-5 h-5 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">En la tierra de esta!</span>
+                <span className="text-sm text-muted-foreground">Cuba</span>
               </li>
             </ul>
           </div>
           
           <div className="flex space-x-4">
-            <Link href="#" className="text-muted-foreground hover:text-primary">
-              <Facebook className="w-5 h-5" />
-              <span className="sr-only">Facebook</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary">
+            <Link href="https://x.com/ring6dev" className="text-muted-foreground hover:text-primary">
               <Twitter className="w-5 h-5" />
               <span className="sr-only">Twitter</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary">
-              <Instagram className="w-5 h-5" />
-              <span className="sr-only">Instagram</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary">
+            <Link href="https://www.linkedin.com/in/brian-av-57aba8231/" className="text-muted-foreground hover:text-primary">
               <Linkedin className="w-5 h-5" />
               <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link href="https://github.com/veriancs" className="text-muted-foreground hover:text-primary">
+              <Github className="w-5 h-5" />
+              <span className="sr-only">Github</span>
             </Link>
           </div>
 
