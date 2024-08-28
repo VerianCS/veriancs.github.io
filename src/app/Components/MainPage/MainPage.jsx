@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Linkedin, Mail, FileText, Beaker, Code, Award, Book, Users, ExternalLink, Twitter, Github } from 'lucide-react'
+import { Linkedin, Mail, FileText, Beaker, Code, Award, Book, Users, ExternalLink, Twitter, Github, X } from 'lucide-react'
 import Image from 'next/image'
 import FooterComponent from '../FooterComponent/FooterComponent'
 import BackgroundAudio from '../AudioPlayerComponent/AudioPlayerComponent'
-
+import GalleryComponent from '../GalleryComponent/GalleryComponent'
 const cloudColors = [
   'from-blue-300 to-purple-300',
   'from-pink-300 to-yellow-300',
@@ -19,6 +19,7 @@ const SocialLinks = [
   {icon: Github, link: "https://www.github.com/veriancs"},
   {icon: Twitter, link: "https://twitter.com/ring6dev"}
 ]
+
 const projects = [
   { title: 'AI Research Paper', type: 'science', description: 'Published in Nature on advanced machine learning algorithms.', link: '#' },
   { title: 'Web App for Data Visualization', type: 'dev', description: 'Interactive dashboard for complex scientific data.', link: '#' },
@@ -44,55 +45,14 @@ const awards = [
   { title: 'Innovation in Technology Award', organization: 'Tech Innovators Association', year: 2021 },
 ]
 
-const galleryImages = [
-  '/DataInsight.png?height=300&width=300&text=Data+Insight+Screenshot',
-  '/placeholder.svg?height=300&width=300&text=Lab+Work',
-  '/placeholder.svg?height=300&width=300&text=Coding+Session',
-  '/placeholder.svg?height=300&width=300&text=Award+Ceremony',
-  '/placeholder.svg?height=300&width=300&text=Research+Poster',
-  '/placeholder.svg?height=300&width=300&text=Team+Project',
-]
 
 export default function MainPage() {
-  const [activeGalleryImage, setActiveGalleryImage] = useState(null)
+
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-8 relative overflow-hidden">
-      <BackgroundAudio></BackgroundAudio>
+    <div className="min-h-screen p-8 relative overflow-hidden">
+      <BackgroundAudio />
       {/* Cloud background */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className={`absolute rounded-full bg-gradient-to-br ${cloudColors[i % cloudColors.length]} opacity-20`}
-            style={{
-              width: `${Math.random() * 300 + 50}px`,
-              height: `${Math.random() * 300 + 50}px`,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              x: [0, Math.random() * 100 - 50],
-              y: [0, Math.random() * 100 - 50],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 10,
-              repeat: Infinity,
-              repeatType: 'reverse',
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Cloud patterns */}
-      <div className="absolute inset-0 opacity-10 mix-blend-overlay">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-          <filter id="noise">
-            <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="3" />
-          </filter>
-          <rect width="100%" height="100%" filter="url(#noise)" />
-        </svg>
-      </div>
 
       <motion.div
         className="max-w-6xl mx-auto bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl p-8 shadow-2xl relative z-10"
@@ -126,22 +86,20 @@ export default function MainPage() {
           <h2 className="text-2xl text-blue-200">Developer & AI engineer</h2>
           
           <div className="flex justify-center space-x-4 mt-4">
-            {
-            SocialLinks.map((SocialLinks, index, icon) => {
-              const Icon = SocialLinks.icon;
-            
-            return(
-              <motion.a
-                key={index}
-                href={SocialLinks.link}
-                className="text-white hover:text-blue-300 transition-colors duration-300"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Icon size={24} />
-              </motion.a>
-            )
-          })}
+            {SocialLinks.map((socialLink, index) => {
+              const Icon = socialLink.icon;
+              return (
+                <motion.a
+                  key={index}
+                  href={socialLink.link}
+                  className="text-white hover:text-blue-300 transition-colors duration-300"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Icon size={24} />
+                </motion.a>
+              )
+            })}
           </div>
         </header>
 
@@ -256,50 +214,10 @@ export default function MainPage() {
             ))}
           </div>
         </section>
-
         <section>
-          <h3 className="text-2xl font-semibold text-white mb-4">Gallery</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {galleryImages.map((src, index) => (
-              <motion.div
-                key={index}
-                className="relative aspect-square rounded-lg overflow-hidden cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setActiveGalleryImage(src)}
-              >
-                <Image
-                  src={src}
-                  alt={`Gallery image ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </motion.div>
-            ))}
-          </div>
         </section>
-
-        <AnimatePresence>
-          {activeGalleryImage && (
-            <motion.div
-              className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setActiveGalleryImage(null)}
-            >
-              <motion.img
-                src={activeGalleryImage}
-                alt="Full size gallery image"
-                className="max-w-full max-h-full object-contain"
-                initial={{ scale: 0.8 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0.8 }}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
       </motion.div>
+      
     </div>
   )
 }
