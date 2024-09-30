@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NVAEIL",
-  description: "My portfolio!",
+  description: "VerianCS portafolio",
 };
 
 export default function RootLayout({ children }) {
