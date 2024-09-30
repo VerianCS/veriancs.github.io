@@ -29,10 +29,10 @@ const projects = [
   { title: 'Open Source Library for Data Analysis', type: 'dev', description: 'Created a privative Python based library for data analysis.', link: '#' },
   { title: 'Quantum Cryptography Protocol', type: 'both', description: 'Designed and implemented an experimental personal quantum crypto protocol.', link: '#' },
   { title: 'Micro Angelic OS', type: 'science', description: 'Designed an AI powered micro Operative system for embbed and IoT technology called Angela OS.', link: '#' },
-  { title: 'Personal portfolio', type: 'dev', description: 'My personal portfolio, made on NEXTJS with REACT + TAILWINDCSS, glassmorphism style.', link: '#' }
+  { title: 'Personal portfolio', type: 'dev', description: 'My personal portfolio, made on NEXTJS with REACT + TAILWINDCSS, glassmorphism style.', link: '#' },
   { title: 'Comercial landing page and warehouse', type: 'dev', description: 'A business landing page made in NEXTJS with REACT + TAILWINDCSS, neumorphic style.', link: '#' },
   { title: 'AI Sekandorokku', type: 'science', description: 'AI for support in the diagnose of neurodevelopment disorders in early age patients.', link: '#' },
-  { title: 'Serious games for rehabilitation', type: 'dev', description: 'Development of serious games for rehabilitation based in XR + electro myographic surface sensors.', link: '#' }
+  { title: 'Serious games for rehabilitation', type: 'dev', description: 'Development of serious games for rehabilitation based in XR + electro myographic surface sensors.', link: '#' },
 ]
 
 const skills = ['Python', 'JavaScript', 'React', 'Machine Learning', 'Data Analysis', 'Quantum Physics', 'Node.js', 'TensorFlow', 'SQL', 'Git', 'Docker', 'AWS', "NextJS", "C#", ".NET", "GO", "Unity", "Rust"]
