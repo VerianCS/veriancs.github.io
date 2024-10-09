@@ -22,17 +22,18 @@ const SocialLinks = [
 ]
 
 const projects = [
-  { title: 'AI Research Paper', type: 'science', description: 'Published in Nature on advanced machine learning algorithms.', link: '#' },
-  { title: 'Web App for Data Visualization', type: 'dev', description: 'Interactive dashboard for complex scientific data for Python as a replacement for MatPlotLib.', link: '#' },
-  { title: 'Quantum Computing Simulation', type: 'both', description: 'Simulated quantum computing using classical computational systems using RUST', link: '#' },
-  { title: 'Climate Change Prediction Model', type: 'science', description: 'Developed a model to predict climate patterns.', link: '#' },
-  { title: 'Open Source Library for Data Analysis', type: 'dev', description: 'Created a privative Python based library for data analysis.', link: '#' },
-  { title: 'Quantum Cryptography Protocol', type: 'both', description: 'Designed and implemented an experimental personal quantum crypto protocol.', link: '#' },
-  { title: 'Micro Angelic OS', type: 'science', description: 'Designed an AI powered micro Operative system for embbed and IoT technology called Angela OS.', link: '#' },
-  { title: 'Personal portfolio', type: 'dev', description: 'My personal portfolio, made on NEXTJS with REACT + TAILWINDCSS, glassmorphism style.', link: '#' },
-  { title: 'Comercial landing page and warehouse', type: 'dev', description: 'A business landing page made in NEXTJS with REACT + TAILWINDCSS, neumorphic style.', link: '#' },
-  { title: 'AI Sekandorokku', type: 'science', description: 'AI for support in the diagnose of neurodevelopment disorders in early age patients.', link: '#' },
-  { title: 'Serious games for rehabilitation', type: 'dev', description: 'Development of serious games for rehabilitation based in XR + electro myographic surface sensors.', link: '#' },
+  { title: 'AI Research Paper', type: 'science', description: 'Published in Nature on advanced machine learning algorithms.', link: 'github.com/veriancs' },
+  { title: 'Web App for Data Visualization', type: 'dev', description: 'Interactive dashboard for complex scientific data for Python as a replacement for MatPlotLib.', link: 'github.com/veriancs' },
+  { title: 'Quantum Computing Simulation', type: 'both', description: 'Simulated quantum computing using classical computational systems using RUST', link: 'github.com/veriancs' },
+  { title: 'Climate Change Prediction Model', type: 'science', description: 'Developed a model to predict climate patterns.', link: 'github.com/veriancs' },
+  { title: 'Open Source Library for Data Analysis', type: 'dev', description: 'Created a privative Python based library for data analysis.', link: 'github.com/veriancs' },
+  { title: 'Quantum Cryptography Protocol', type: 'both', description: 'Designed and implemented an experimental personal quantum crypto protocol.', link: 'github.com/veriancs' },
+  { title: 'Micro Angelic OS', type: 'science', description: 'Designed an AI powered micro Operative system for embbed and IoT technology called Angela OS.', link: 'github.com/veriancs' },
+  { title: 'Personal portfolio', type: 'dev', description: 'My personal portfolio, made on NEXTJS with REACT + TAILWINDCSS, glassmorphism style.', link: 'veriancs.vercel.app' },
+  { title: 'Comercial landing page and warehouse', type: 'dev', description: 'A business landing page made in NEXTJS with REACT + TAILWINDCSS, neumorphic style.', link: 'http://merhub.es/' },
+  { title: 'AI Sekandorokku', type: 'science', description: 'AI for support in the diagnose of neurodevelopment disorders in early age patients.', link: 'https://www.cent.uo.edu.cu/cenpis/' },
+  { title: 'Serious games for rehabilitation', type: 'dev', description: 'Development of serious games for rehabilitation based in XR + electro myographic surface sensors.', link: 'https://www.cent.uo.edu.cu/cbm/464-2/' },
+  { title: 'Serious games for rehabilitation', type: 'dev', description: 'Development of a landing page for a operative system called Increase OS, debian based.', link: 'https://increase-os.vercel.app/' },
 ]
 
 const skills = ['Python', 'JavaScript', 'React', 'Machine Learning', 'Data Analysis', 'Quantum Physics', 'Node.js', 'TensorFlow', 'SQL', 'Git', 'Docker', 'AWS', "NextJS", "C#", ".NET", "GO", "Unity", "Rust"]
