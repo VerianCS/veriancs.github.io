@@ -73,7 +73,7 @@ export default function MainPage() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/AngelaMoon.jpg?height=160&width=160&text=Profile"
+              src="/AngelaMoon.png?height=160&width=160&text=Profile"
               alt="Dr. Jane Doe"
               width={160}
               height={160}

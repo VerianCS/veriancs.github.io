@@ -5,7 +5,7 @@ import { X } from "lucide-react"
 import { motion, AnimatePresence } from 'framer-motion'
 const galleryImages = [
     '/DataInsight.png?height=300&width=300&text=Data+Insight+Screenshot',
-    '/placeholder.svg?height=300&width=300&text=Lab+Work',
+    '/IncreaseOS.png?height=300&width=300&text=Lab+Work',
     '/placeholder.svg?height=300&width=300&text=Coding+Session',
     '/placeholder.svg?height=300&width=300&text=Award+Ceremony',
     '/placeholder.svg?height=300&width=300&text=Research+Poster',
