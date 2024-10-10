@@ -33,7 +33,7 @@ const projects = [
   { title: 'Comercial landing page and warehouse', type: 'dev', description: 'A business landing page made in NEXTJS with REACT + TAILWINDCSS, neumorphic style.', link: 'http://merhub.es/' },
   { title: 'AI Sekandorokku', type: 'science', description: 'AI for support in the diagnose of neurodevelopment disorders in early age patients.', link: 'https://www.cent.uo.edu.cu/cenpis/' },
   { title: 'Serious games for rehabilitation', type: 'dev', description: 'Development of serious games for rehabilitation based in XR + electro myographic surface sensors.', link: 'https://www.cent.uo.edu.cu/cbm/464-2/' },
-  { title: 'Serious games for rehabilitation', type: 'dev', description: 'Development of a landing page for a operative system called Increase OS, debian based.', link: 'https://increase-os.vercel.app/' },
+  { title: 'Landing page for an operative system presentation and download', type: 'dev', description: 'Development of a landing page for a operative system called Increase OS, debian based.', link: 'https://increase-os.vercel.app/' },
 ]
 
 const skills = ['Python', 'JavaScript', 'React', 'Machine Learning', 'Data Analysis', 'Quantum Physics', 'Node.js', 'TensorFlow', 'SQL', 'Git', 'Docker', 'AWS', "NextJS", "C#", ".NET", "GO", "Unity", "Rust"]
